@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+        <table>
+            <tr>
+                <td><label for="FN">First Name</label></td>
+                <td><input type="text" placeholder="Ex:Azby" required>
+                <p>Enter your first name</p></td>
+            </tr>
+            <tr>
+                <td><label for="MN">Middle Name</label></td>
+                <td><input type="text" optional> 
+                <p>Enter your middle name</p></td>
+            </tr>
+            <tr>
+                <td><label for="LN">Last Name</label></td>
+                <td><input type="text" placeholder="Ex:Gknd" required>
+                <p>Enter your last name</p></td>
+            </tr>
+            <tr>
+                <td><label for="PN">Mobile number</label></td>
+                <td><input type="tel" placeholder="Ex:957342" required>
+                <p>Enter your mobile number</p></td>
+            </tr>
+            <tr>
+                <td><label for="">Email</label></td>
+                <td><input type="email" name="" id="" placeholder="Ex:www@gmail.com" required>
+                <p>Enter your Email</p>
+                <img src="check.png" alt="" id="valid">
+                <img src="delete.png" alt="" id="invalid">
+            </td>
+            </tr>
+            <tr>
+                <td><label for="">Password</label></td>
+                <td><input type="password" required>
+                <p>Enter the password</p></td>
+            </tr>
+            <tr>
+                <td><label for="">Confirm Password</label></td>
+                <td><input type="password" required>
+                <p>confirm password</p></td>
+            </tr>
+            <tr>
+                <td><label for="">DOB</label></td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Gender</label></td>
+                <td><input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+                <input type="radio" name="gender">Others</td>
+            </tr>
+            <tr>
+                <td><label for="">Select Country</label></td>
+                <td>
+                    <select name="Country" required>
+                        <option value="ID">INDIA</opttion>
+                        <option value="US">USA</option>
+                        <option value="JN">JAPAN</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Upload Picture</label></td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td><input type="reset" required></td>
+            </tr>
+        </table>
+        </fieldset>
+        <br> <br>
+        <fieldset>
+            <legend>Course Details</legend>
+        <table>
+            <tr>
+                <td><label for="">Select Course</label></td>
+                <td>
+                    <select name="SC" required>
+                        <option value="PFS">Python Full Stack</option>
+                        <option value="JFS">Java Full Stack</option>
+                        <option value="CP">C-Programming</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Delivery Mode</label></td>
+                <td>
+                    <input type="radio" name="mode">ONLINE
+                    <input type="radio" name="mode">OFFLINE
+                </td>
+            </tr>
+            
+        </table>
+            <label for="">Comments</label><br>
+            <textarea cols="50" rows="10" id="" required></textarea><br>
+        </fieldset><br>
+        <input type="submit" required>
+    </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body{
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(190, 87, 199, 1) 55%, rgba(237, 221, 83, 1) 100%
+    );
+    font-family: sans-serif;
+}
+form{
+    width: 500px;
+}
+fieldset{
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+input[required]{
+    border: 2px solid black;
+}
+input[optional]{
+    border: 3px solid peru;
+}
+input:focus{
+    background-color: darkgray;
+}
+input+P{
+    display: none;
+}
+input:hover+p{
+    display: inline;
+    font-size: 10px;
+}
+img{
+    display: none;
+}
+input[type="Email"]:focus:valid~img#valid{
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+input[type="Email"]:focus:invalid~img#invalid{
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+input[type="radio"]:checked{
+    height: 17px;
+    width: 17px;
+    background-color: blueviolet;
+}
